@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/slick.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <title>Ecobazar</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
+</head>
+
+<body>
+    <header>
+        <!-- nav menu bar start -->
+        <!-- 1st menu bar start -->
+        <section id="firstMenu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>
+                            <span><iconify-icon icon="famicons:location-outline"></iconify-icon></span>Store Location:
+                            Lincoln- 344, Illinois, Chicago, USA
+                        </p>
+                    </div>
+                    <div class="d-none d-lg-block col-6 text-end">
+                        <select name="lan" class="select-input">
+                            <option value="">ENG</option>
+                            <option value="">BNG</option>
+                        </select>
+                        <select name="currency" class="select-input">
+                            <option value="">USD</option>
+                            <option value="">BDT</option>
+                        </select>
+                        <a href="sign-in.html">Sign in/Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 1st menu bar end -->
+        <!-- second menu start -->
+        <section id="secondMenu" class="d-none d-lg-block">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="./assets/images/Logo.png" alt="" /></a>
+                    <form class="d-flex">
+                        <span class="search-icon"><iconify-icon icon="lucide:search" width="20"
+                                height="20"></iconify-icon></span>
+                        <input class="serchBar" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="serchBtn" type="submit">Search</button>
+                    </form>
+                    <div class="collapse navbar-collapse" id="icon">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><iconify-icon icon="system-uicons:heart" width="32"
+                                        height="32"></iconify-icon></a>
+                            </li>
+                            <li class="d-flex">
+                                <div class="counter">2</div>
+                                <a class="nav-link cart" role="button"><iconify-icon icon="lets-icons:bag-alt-light"
+                                        width="32" height="32"></iconify-icon></a>
+                                <div class="cart-text">
+                                    <p>Shopping cart:</p>
+                                    <h3>$57.00</h3>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <!-- second menu end -->
+        <!-- Third menu start -->
+        <section id="thirdMenulg" class="d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <ul class="d-flex align-items-center">
+                            <li>
+                                <button id="catagoryToggle" class="d-flex align-items-center">
+                                    <span><iconify-icon icon="tabler:menu-3" width="24"
+                                            height="24"></iconify-icon></span>
+                                    <p>All Categories</p>
+                                    <span><iconify-icon icon="iconoir:nav-arrow-down" width="18"
+                                            height="18"></iconify-icon></span>
+                                </button>
+                                <!-- sub menu start -->
+                                <div class="subMenu">
+                                    <ul>
+                                        <li><a href="shop.html">Fresh Fruit</a></li>
+                                        <li><a href="shop.html">Vegetables</a></li>
+                                        <li><a href="shop.html">Cooking</a></li>
+                                        <li><a href="shop.html">Snacks</a></li>
+                                        <li><a href="shop.html">Beverages</a></li>
+                                        <li><a href="shop.html">Beauty & Health</a></li>
+                                        <li><a href="shop.html">Bread & Bakery</a></li>
+                                    </ul>
+                                </div>
+                                <!-- sub menu end -->
+                            </li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="not-found.html">Pages</a></li>
+                            <li><a href="blog-post.html">Blog</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 d-flex align-items-center callLog">
+                        <a href="tel:(219) 555-0114"><span><iconify-icon icon="mingcute:phone-call-line" width="22"
+                                    height="22"></iconify-icon></span>(219) 555-0114</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Third menu end -->
+        <!-- mobile menu start -->
+        <section id="mobileMenu" class="d-block d-lg-none">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-2">
+                        <button class="menuBtn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                            aria-controls="offcanvasExample">
+                            <span><iconify-icon icon="gg:menu-left" width="28" height="28"></iconify-icon></span>
+                        </button>
+                    </div>
+                    <div class="col-6">
+                        <a href="index.html">
+                            <img src="./assets/images/Logo.png" alt="" class="img-fluid" />
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <div class="ms-auto" id="icon">
+                            <ul class="d-flex">
+                                <li class="">
+                                    <a class="searchIcon" href="">
+                                        <iconify-icon icon="codex:search" width="27" height="27"></iconify-icon>
+                                    </a>
+                                </li>
+                                <li class="d-flex">
+                                    <div class="counter">2</div>
+                                    <a class="cart" role="button" href="">
+                                        <iconify-icon icon="lets-icons:bag-alt-light" width="27"
+                                            height="27"></iconify-icon>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a class="logIcon ms-3" href="sign-in.html">
+                                        <iconify-icon icon="ooui:user-avatar-outline" width="23"
+                                            height="23"></iconify-icon>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- off canvas start -->
+            <div class="offcanvas offcanvas-start w-75" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                        <a href="index.html"><img src="./assets/images/Logo.png" alt="" /></a>
+                    </h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="offcanvasMenu">
+                        <ul class="ms-2">
+                            <li>
+                                <div class="subMenu">
+                                    <button id="catagoryTogglemob" class="d-flex align-items-center">
+                                        <p>All Categories</p>
+                                        <span><iconify-icon icon="iconoir:nav-arrow-down" width="18"
+                                                height="18"></iconify-icon></span>
+                                    </button>
+                                    <ul class="mobileSubmenu">
+                                        <li><a href="shop.html">Fresh Fruit</a></li>
+                                        <li><a href="shop.html">Vegetables</a></li>
+                                        <li><a href="shop.html">Cooking</a></li>
+                                        <li><a href="shop.html">Snacks</a></li>
+                                        <li><a href="shop.html">Beverages</a></li>
+                                        <li><a href="shop.html">Beauty & Health</a></li>
+                                        <li><a href="shop.html">Bread & Bakery</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="not-found.html">Pages</a></li>
+                            <li><a href="blog-post.html">Blog</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="socialIcon">
+                        <ul class="d-flex gap-2">
+                            <li>
+                                <a href=""><iconify-icon icon="ri:facebook-fill"></iconify-icon></a>
+                            </li>
+                            <li>
+                                <a href=""><iconify-icon icon="uiw:twitter"></iconify-icon></a>
+                            </li>
+                            <li>
+                                <a href=""><iconify-icon icon="typcn:social-pinterest"></iconify-icon></a>
+                            </li>
+                            <li>
+                                <a href=""><iconify-icon icon="la:instagram"></iconify-icon></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- off canvas end -->
+        </section>
+        <!-- mobile menu end -->
+        <!-- cart off canvas start -->
+        <aside class="cartOffcanvas">
+            <div class="cartContant">
+                <div class="cartHeader">
+                    <p>Shoping Cart</p>
+                    <button class="closeCart">Close</button>
+                </div>
+                <div class="cartDetails">
+                    <span><iconify-icon icon="pepicons-pop:cart-off" width="150" height="150"></iconify-icon></span>
+                    <p>No Product Added</p>
+                    <button class="closeCart">Continue Shoping</button>
+                </div>
+            </div>
+        </aside>
+        <!-- cart off canvas end -->
+        <!-- serch aside start -->
+        <aside class="productSearch d-block d-lg-none">
+            <div class="searchContant">
+                <button class="closeSearch">close</button>
+                <input type="search" name="search-products" placeholder="search product here" />
+            </div>
+        </aside>
+        <!-- serch aside end -->
+        <!-- nav menu bar end -->
+    </header>
+    <main>
+        <!-- breadcrum start -->
+        <section id="breadCrums">
+            <div class="container">
+                <div class="linkContant">
+                    <ul class="d-flex align-items-center gap-1">
+                        <li><a href=""><iconify-icon icon="material-symbols-light:home-outline-rounded" width="24"
+                                    height="24"></iconify-icon></a></li>
+                        <iconify-icon icon="material-symbols-light:keyboard-arrow-right"></iconify-icon>
+                        <li><a href="">Account</a></li>
+                        <iconify-icon icon="material-symbols-light:keyboard-arrow-right"></iconify-icon>
+                        <li><a class="active" href="">Dashboard</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- breadcrum end -->
+        <!-- user-dashboard section start -->
+        <section id="user-deshboard">
+            <div class="container">
+                <div class="row">
+                    <a class="navigation-canvas d-block d-lg-none" data-bs-toggle="offcanvas" href="#offcanvasExample2"
+                        role="button" aria-controls="offcanvasExample"><iconify-icon
+                                icon="picon:right"></iconify-icon>                     
+                    </a>
+                    <div class="offcanvas offcanvas-start w-75" tabindex="-1" id="offcanvasExample2"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Navigation</h5>
+                            <button type="button" class="btn-close border-0" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body p-0">
+                            <div class="navication-wraper">                
+                                <ul>
+                                    <li><a class="active" href="user-dashboard.html"><span><iconify-icon
+                                                    icon="material-symbols:dashboard-rounded"></iconify-icon></span>Dashboard</a>
+                                    </li>
+                                    <li><a href="order-history.html"><span><iconify-icon icon="bx:refresh"></iconify-icon></span>Order
+                                            History</a></li>
+                                    <li><a href="wishlist.html"><span><iconify-icon
+                                                    icon="iconamoon:heart-light"></iconify-icon></span>Wishlist</a></li>
+                                    <li><a href="shoping-cart.html"><span><iconify-icon
+                                                    icon="lets-icons:bag-alt-light"></iconify-icon></span>Shopping
+                                            Cart</a>
+                                    </li>
+                                    <li><a href="setings.html"><span><iconify-icon
+                                                    icon="proicons:settings"></iconify-icon></span>Settings</a></li>
+                                    <li><a href="sign-in.html"><span><iconify-icon
+                                                    icon="simple-line-icons:login"></iconify-icon></span>Log-out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 d-none d-lg-block">
+                        <div class="navication-wraper">
+                            <h4>Navigation</h4>
+                            <ul>
+                                <li><a class="active" href="user-dashboard.html"><span><iconify-icon
+                                                icon="material-symbols:dashboard-rounded"></iconify-icon></span>Dashboard</a>
+                                </li>
+                                <li><a href="order-history.html"><span><iconify-icon icon="bx:refresh"></iconify-icon></span>Order
+                                        History</a></li>
+                                <li><a href="wishlist.html"><span><iconify-icon
+                                                icon="iconamoon:heart-light"></iconify-icon></span>Wishlist</a></li>
+                                <li><a href="shoping-cart.html"><span><iconify-icon
+                                                icon="lets-icons:bag-alt-light"></iconify-icon></span>Shopping Cart</a>
+                                </li>
+                                <li><a href="setings.html"><span><iconify-icon
+                                                icon="proicons:settings"></iconify-icon></span>Settings</a></li>
+                                <li><a href="sign-in.html"><span><iconify-icon
+                                                icon="simple-line-icons:login"></iconify-icon></span>Log-out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-12">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="dash-profile d-flex justify-content-center align-items-center flex-column">
+                                    <img src="./assets/images/dashboardimage1.png" class="img-fluid" alt="">
+                                    <h5>Dianne Russell</h5>
+                                    <p>Customer</p>
+                                    <a href="">Edit Profile</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="bill-address-wraper">
+                                    <p>Billing Address</p>
+                                    <h6>Dainne Russell</h6>
+                                    <p>4140 Parker Rd. Allentown, New Mexico 31134</p>
+                                    <p>dainne.ressell@gmail.com</p>
+                                    <p>(671) 555-0110</p>
+                                    <a href="">Edit Address</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dash-table-wrapper">
+                            <div class="dash-table-heading table-responsive">
+                                <h5>Recent Order History</h5>
+                                <a href="order-history.html">View All</a>
+                            </div>
+                            <table class="w-100">
+                                <thead>
+                                    <tr>
+                                        <th>Order ID</th>
+                                        <th>Date</th>
+                                        <th>Total</th>
+                                        <th>Status</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#738</td>
+                                        <td>8 Sep, 2020</td>
+                                        <td>$135.00 (5 Products)</td>
+                                        <td>Processing</td>
+                                        <td><a href="">View Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#703</td>
+                                        <td>24 May, 2020</td>
+                                        <td>$25.00 (1 Product)</td>
+                                        <td>on the way</td>
+                                        <td><a href="">View Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#130</td>
+                                        <td>22 Oct, 2020</td>
+                                        <td>$250.00 (4 Products)</td>
+                                        <td>Completed</td>
+                                        <td><a href="">View Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#561</td>
+                                        <td>1 Feb, 2020</td>
+                                        <td>$35.00 (1 Products)</td>
+                                        <td>Completed</td>
+                                        <td><a href="">View Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#536</td>
+                                        <td>21 Sep, 2020</td>
+                                        <td>$578.00 (13 Products)</td>
+                                        <td>Completed</td>
+                                        <td><a href="">View Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#492</td>
+                                        <td>22 Oct, 2020</td>
+                                        <td>$345.00 (7 Products)</td>
+                                        <td>Completed</td>
+                                        <td><a href="">View Details</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- user-dashboard section end -->
+    </main>
+    <!-- newslatter start -->
+    <section id="newsLatter">
+        <div class="container">
+            <div class="row justify-contant-between align-items-center pt-5">
+                <div class="col-lg-4 col-12 text-center text-lg-start">
+                    <h5>Subcribe our Newsletter</h5>
+                    <p>Pellentesque eu nibh eget mauris congue mattis matti.</p>
+                </div>
+                <div class="col-lg-5 col-12 text-center text-lg-start">
+                    <form>
+                        <input type="email" placeholder="Your email address" />
+                        <button class="subBtn">Subscribe</button>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-12 singleproduct-social">
+                    <div class="socialIcon">
+                        <ul class="d-flex justify-content-center">
+                            <li>
+                                <a href=""><iconify-icon icon="gg:facebook"></iconify-icon></a>
+                            </li>
+                            <li>
+                                <a href=""><iconify-icon icon="uiw:twitter"></iconify-icon></a>
+                            </li>
+                            <li>
+                                <a href=""><iconify-icon icon="typcn:social-pinterest"></iconify-icon></a>
+                            </li>
+                            <li>
+                                <a href=""><iconify-icon icon="la:instagram"></iconify-icon></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- newslatter end -->
+    <!-- footer start -->
+    <footer id="footer">
+        <div class="backImg">
+            <img class="img-fluid d-none d-lg-block" loading="lazy" src="./assets/images/footer.png" alt="leftImg" />
+            <img class="img-fluid d-none d-lg-block" loading="lazy" src="./assets/images/Group 17.png" alt="rightImg" />
+        </div>
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-3 col-12 p-0 text-center text-lg-start">
+                    <h5>About Shopery</h5>
+                    <p class="mb-4">
+                        Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis
+                        dui, eget bibendum magna congue nec.
+                    </p>
+                    <p class="contactLinks"><a href="tel:(219) 555-0114">(219) 555-0114</a>
+                        or
+                        <a href="">Proxy@gmail.com</a>
+                    </p>
+                </div>
+                <div class="col-lg-2 col-12 ps-lg-5 text-center text-lg-start">
+                    <h5>My Account</h5>
+                    <ul class="footer-list">
+                        <li><a href="user-dashboard.html">My Account</a></li>
+                        <li><a href="order-history.html">Order History</a></li>
+                        <li><a href="shoping-cart.html">Shipping Cart</a></li>
+                        <li><a href="wishlist.html">Wishlist</a></li>
+                        <li><a href="setings.html">Settings</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-12 ps-lg-5 text-center text-lg-start">
+                    <h5>Helps</h5>
+                    <ul class="footer-list">
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">Faqs</a></li>
+                        <li><a href="not-found.html">Terms & Condition</a></li>
+                        <li><a href="not-found.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-12 ps-lg-5 text-center text-lg-start">
+                    <h5>Proxy</h5>
+                    <ul class="footer-list">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="not-found.html">Product</a></li>
+                        <li><a href="single-product.html">Products Details</a></li>
+                        <li><a href="order-details.html">Track Order</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-12 text-center text-lg-start">
+                    <h5>Instagram</h5>
+                    <div class="instaImg ">
+                        <img class="img-fluid" src="./assets/images/instagram/Image1.png" alt="" />
+                        <img class="img-fluid" src="./assets/images/instagram/image2.png" alt="" />
+                        <img class="img-fluid" src="./assets/images/instagram/Image3.png" alt="" />
+                        <img class="img-fluid" src="./assets/images/instagram/Image4.png" alt="" />
+                        <img class="img-fluid" src="./assets/images/instagram/Image5.png" alt="" />
+                        <img class="img-fluid" src="./assets/images/instagram/Image6.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <hr class="d-none d-lg-block" />
+            <div class="footerBottom">
+                <div class="row">
+                    <div class="col-lg-5 col-12 order-lg-2 order-3 text-center">
+                        <p class="mb-0 copyRight">Shopery eCommerce © 2025. All Rights Reserved</p>
+                    </div>
+                    <div class="col-lg-4 col-12 order-lg-3 order-2">
+                        <div class="paymentIcons text-center">
+                            <a href=""><iconify-icon icon="fa7-brands:apple-pay" width="32"
+                                    height="14"></iconify-icon></a>
+                            <a href=""><iconify-icon icon="simple-icons:visa" width="32" height="14"></iconify-icon></a>
+                            <a href=""><iconify-icon icon="brandico:discover" width="32" height="14"></iconify-icon></a>
+                            <a href=""><iconify-icon icon="logos:mastercard" width="32" height="14"></iconify-icon></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
