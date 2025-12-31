@@ -274,11 +274,7 @@
     #countdownDeal .text-center h3 {
         font-size: 30px;
     }
-
-    #countdownDeal .time {
-        padding-left: 20px;
-    }
-
+  
     #countdownDeal .time span {
         padding: 14px;
 
@@ -360,7 +356,7 @@
     }
 
     .instaImg {
-        padding: 30px 90px;
+        padding: 0 50px;
     }
 
     #footer .contactLinks {
@@ -370,6 +366,10 @@
     .socialIcon {
         margin-block-end: 20px;
         margin-block-start: 0;
+        & ul.d-flex{
+            justify-content: center;
+        }
+        
     }
 
     .socialIcon a:hover,
