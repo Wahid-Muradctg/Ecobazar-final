@@ -313,12 +313,21 @@
                             <details>
                                 <summary>Price<span><iconify-icon icon="iconamoon:arrow-down-2-light" width="24"
                                             height="24"></iconify-icon></span></summary>
-                                <p>
-
-                                    <input type="text" id="amount" readonly=""
-                                        style="border:0; color:#f6931f; font-weight:bold;">
-                                    <label for="amount">Price range:</label>
-                                </p>
+                                <div class="range-slider">                                    
+                                    <div class="slider-track"></div>                                   
+                                    <div class="slider-range"></div>                                   
+                                    <div class="slider-handle handle-min" data-type="min"></div>                                    
+                                    <div class="slider-handle handle-max" data-type="max"></div>
+                                </div>
+                                <div class="inputs">
+                                    <p>Price:</p>
+                                    <div class="input-group">
+                                        <input type="number" id="min-input" value="0" min="0" max="1000">
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="number" id="max-input" value="1000" min="0" max="1000">
+                                    </div>
+                                </div>
                             </details>
                             <hr>
                             <details>
@@ -1396,9 +1405,8 @@
     </footer>
     <!-- footer end -->
 
-    <script src="./assets/js/jquery-3.7.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
-    <script src="./assets/js/range-slider.min.js"></script>
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>   
+    <script src="range-slider.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
     <script src="./assets/js/slick.min.js"></script>
